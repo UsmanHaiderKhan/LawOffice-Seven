@@ -1617,7 +1617,23 @@
     <Content Include="assets\font\flaticon.css" />
     <Content Include="assets\font\flaticon.html" />
     <Content Include="assets\font\Flaticon.svg" />
+    <Content Include="assets\Images\body-banner.png" />
+    <Content Include="assets\Images\cases\c1.png" />
+    <Content Include="assets\Images\cases\c2.png" />
+    <Content Include="assets\Images\cases\c3.png" />
+    <Content Include="assets\Images\cases\c4.png" />
+    <Content Include="assets\Images\cases\c5.png" />
+    <Content Include="assets\Images\cases\c6.png" />
+    <Content Include="assets\Images\cases\c7.png" />
+    <Content Include="assets\Images\cases\c8.png" />
+    <Content Include="assets\Images\client-banner.png" />
+    <Content Include="assets\Images\client.png" />
+    <Content Include="assets\Images\contact-banner.png" />
+    <Content Include="assets\Images\logo.png" />
     <Content Include="assets\Images\main-banner.png" />
+    <Content Include="assets\Images\team\t1.png" />
+    <Content Include="assets\Images\team\t2.png" />
+    <Content Include="assets\Images\team\t3.png" />
     <Content Include="index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -1681,12 +1697,12 @@
     <Content Include="assets\fontawesome-free-5.6.1-web\webfonts\fa-solid-900.ttf" />
     <Content Include="assets\fontawesome-free-5.6.1-web\webfonts\fa-solid-900.woff" />
     <Content Include="assets\fontawesome-free-5.6.1-web\webfonts\fa-solid-900.woff2" />
+    <Content Include="assets\Fonts\Parc Place.ttf" />
     <Content Include="assets\font\Flaticon.eot" />
     <Content Include="assets\font\Flaticon.ttf" />
     <Content Include="assets\font\Flaticon.woff" />
     <Content Include="assets\font\Flaticon.woff2" />
     <Content Include="assets\font\_flaticon.scss" />
-    <Content Include="assets\Fonts\Parc Place.ttf" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
