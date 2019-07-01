@@ -1,9 +1,9 @@
 ﻿
 /*================== Read More Text ==================*/
 $(function () {
-    var showChar = 1100;
-    var moretext = "Read More";
-    var lesstext = "Read Less";
+    var showChar = 180;
+    var moretext = "Read More +";
+    var lesstext = "Read Less -";
     $('.comments-space').each(function () {
         var content = $(this).html();
         if (content.length > showChar) {
@@ -14,7 +14,7 @@ $(function () {
                 hide_content +
                 '</span>' +
 
-                '<a href="" class="morelink btn btn-read-more mt-30 mb-3 link-style " style="display:block;">' +
+                '<a href="" class="morelink btn btn-read-more mt-30 link-style " style="display:block;">' +
                 moretext +
                 '</a>' + '</span>';;
 
@@ -142,43 +142,45 @@ $(document).ready(function () {
 $(function () {
     $('#owl-two').owlCarousel({
         loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
         margin: 0,
-        dots: true,
-        nav: false,
+        dots: false,
+        nav: true,
         slideBy: 1,
         item: 1,
-
+        navText: ['<i class="flaticon-left-chevron" aria-hidden="true"></i>', '<i class="flaticon-chevron" aria-hidden="true"></i>'],
         responsiveClass: true,
         responsive: {
             0: {
                 items: 1,
-                dots: true,
-                nav: false,
+                dots: false,
+                nav: true,
             },
             400: {
                 items: 1,
-                dots: true,
-                nav: false,
+                dots: false,
+                nav: true,
             },
             600: {
                 items: 1,
-                dots: true,
-                nav: false,
+                dots: false,
+                nav: true,
             },
             768: {
                 items: 1,
-                dots: true,
-                nav: false,
+                dots: false,
+                nav: true,
             },
             830: {
                 items: 1,
-                dots: true,
-                nav: false,
+                dots: false,
+                nav: true,
             },
             1000: {
                 items: 1,
-                dots: true,
-                nav: false,
+                dots: false,
+                nav: true,
             }
         }
     });
@@ -189,11 +191,11 @@ $(function () {
     $('#owl-one').owlCarousel({
         loop: true,
         margin: 20,
-        dots: false,
-        nav: true,
-        slideBy: 6,
-        item: 1,
-        navText: ["<i class='flaticon-left-arrow-key'></i>", "<i class='flaticon-keyboard-right-arrow-button'></i> "],
+        dots: true,
+        nav: false,
+        slideBy: 3,
+        item: 3,
+        stagePadding: 15,
         responsiveClass: true,
         responsive: {
             0: {
@@ -203,28 +205,28 @@ $(function () {
             },
             400: {
                 items: 1,
-                dots: false,
-                nav: true,
+                dots: true,
+                nav: false,
             },
             600: {
-                items: 4,
-                dots: false,
-                nav: true,
+                items: 2,
+                dots: true,
+                nav: false,
             },
             768: {
                 items: 3,
-                dots: false,
-                nav: true,
+                dots: true,
+                nav: false,
             },
             830: {
-                items: 5,
-                dots: false,
-                nav: true,
+                items: 3,
+                dots: true,
+                nav: false,
             },
             1000: {
-                items: 6,
-                dots: false,
-                nav: true,
+                items: 3,
+                dots: true,
+                nav: false,
             }
         }
     });
@@ -235,42 +237,42 @@ $(function () {
     $('.owl-carousel').owlCarousel({
         loop: true,
         margin: 0,
-        dots: true,
-        nav: false,
+        dots: false,
+        nav: true,
         slideBy: 1,
         item: 1,
-
+        navText: ['<i class="flaticon-back" aria-hidden="true"></i>', '<i class="flaticon-next" aria-hidden="true"></i>'],
         responsiveClass: true,
         responsive: {
             0: {
                 items: 1,
-                dots: true,
-                nav: false,
+                dots: false,
+                nav: true,
             },
             400: {
                 items: 1,
-                dots: true,
-                nav: false,
+                dots: false,
+                nav: true,
             },
             600: {
                 items: 1,
-                dots: true,
-                nav: false
+                dots: false,
+                nav: true,
             },
             768: {
                 items: 1,
-                dots: true,
-                nav: false,
+                dots: false,
+                nav: true,
             },
             830: {
                 items: 1,
-                dots: true,
-                nav: false,
+                dots: false,
+                nav: true,
             },
             1000: {
                 items: 1,
-                dots: true,
-                nav: false,
+                dots: false,
+                nav: true,
             }
         }
     });
@@ -280,46 +282,17 @@ $(function () {
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
         var width = $(window).width();
-        //alert(scroll);
-
-        if (width == 768) {
-            if (scroll >= 500) {
-                $("nav").addClass("fixed-top bold-nav-color");
-
-            } else {
-                $("nav").removeClass("fixed-top bold-nav-color");
-            }
-        }
-
-        else if (width <= 480) {
-
-            if (scroll >= 300) {
-                $("nav").addClass("fixed-top bold-nav-color");
-
-            } else {
-                $("nav").removeClass("fixed-top bold-nav-color");
-            }
-        }
-        else if (width <= 830) {
-
-            if (scroll >= 400) {
-                $("nav").addClass("fixed-top bold-nav-color");
-
-            } else {
-                $("nav").removeClass("fixed-top bold-nav-color");
-            }
-        }
-        else if (scroll >= 900) {
-            $("nav").addClass("fixed-top bold-nav-color");
+        if (scroll >= 100) {
+            $("nav").addClass("nav-bg-color");
 
         } else {
-            $("nav").removeClass("fixed-top bold-nav-color");
+            $("nav").removeClass("nav-bg-color");
         }
     });
 });
 /*===================== Another Load More Script ======================*/
 $(function () {
-    $(".no-display").slice(0, 16).show();
+    $(".no-display").slice(0, 8).show();
     $("#load-more").on('click', function (e) {
         e.preventDefault();
         $(".no-display:hidden").slice(0, 4).slideDown();
@@ -334,7 +307,6 @@ $(function () {
         }, 1500);
     });
 });
-
 $(function () {
     $(".none-display").slice(0, 3).show();
     $("#load-another").on('click', function (e) {
