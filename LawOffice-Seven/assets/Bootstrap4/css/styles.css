@@ -810,16 +810,6 @@ textarea {
     background-image: -ms-linear-gradient( 90deg, rgb(243,188,22) 0%, rgb(255,210,73) 51%, rgb(249,207,77) 100%);
 }
 
-.Rectangle_22 {
-    position: absolute;
-    left: -4px;
-    top: 5234px;
-    width: 1406px;
-    height: 82px;
-    z-index: 163;
-}
-
-
 .footer-font {
     font-size: 20px;
     color: #000000;
@@ -1603,6 +1593,10 @@ button:focus {
         font-size: 19px;
     }
 
+    .member-name {
+        font-size: 27px;
+    }
+
     .cases-desc {
         font-size: 13px;
     }
@@ -2002,7 +1996,18 @@ button:focus {
 @media screen and (max-width:1367px ) and (orientation: landscape) {
 }
 
-@media screen and (max-width: 1280px) and (orientation: landscape) {
+@media screen and (max-width: 1281px) and (orientation: landscape) {
+    #home .main-banner-text {
+        font-size: 48px;
+    }
+
+    .content-position {
+        top: 32%;
+    }
+
+    #home .owl-theme .owl-nav {
+        margin-top: 25px;
+    }
 }
 
 @media screen and (max-width: 1024px) and (orientation: landscape) {
@@ -2010,9 +2015,17 @@ button:focus {
         height: 85vh;
     }
 
-        .banner-container .after {
-            height: 86vh;
-        }
+    #home .main-banner-text {
+        font-size: 40px;
+    }
+
+    #home .owl-theme .owl-nav {
+        margin-top: 0px;
+    }
+
+    .banner-container .after {
+        height: 86vh;
+    }
 
     #home .owl-carousel .owl-nav button.owl-prev {
         bottom: 18px;
@@ -2173,4 +2186,7 @@ button:focus {
 }
 
 @media screen and (max-width: 641px) and (orientation: landscape) {
+    #home .main-banner-desc {
+        font-size: 11px;
+    }
 }
